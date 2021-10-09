@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 body {
 background-color: #621402;
 font-size: 14px;
@@ -6,10 +9,14 @@ color: #FFFFFF;
 font-family: 'Roboto', sans-serif;
 }
 .header {
-    background-image: url(../img/bg.jpg);
+    background-image: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url(../img/bg.jpg);
     background-repeat:no-repeat;
-    background-position: center center;
+    background-position: center top;
     background-size: cover;
+    min-height: 100vh;
+}
+.navbar {
+    
     display: flex;
     align-items: center;
     padding: 30px 0 30px;
@@ -44,4 +51,129 @@ font-family: 'Roboto', sans-serif;
 }
 .logo{
     margin-right: 30px;
+}
+.film {
+    margin-top: 60px;
+    display: flex;
+    align-items:center;
+}
+.film__title__small {
+    font-size: 24px;
+    line-height: 150%;
+    opacity: 0.5;
+    margin-bottom: 11px;
+}
+.film__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+    margin-bottom: 11px 0 23px;
+}
+.film__description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 570px;
+}
+.film__trailer {
+    margin: auto;
+}
+.film__details{
+    display: flex;
+    align-items: center;
+    margin-top: 55px;
+}
+.time{
+    display: flex;
+    align-items:center;
+}
+.time__icon{
+    margin-right: 14px;
+}
+.rating {
+    display: flex;
+    align-items:center;
+}
+.rating__icon {
+    margin-right: 12px;
+    margin-left: 34px;
+}
+.rating__counter {
+}
+.rating__current {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+}
+.session {
+    margin-top: 68px;
+    padding-top: 46px;
+    padding-bottom: 63px; 
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.session__date_block {
+    display: flex;
+}
+.session_date_item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+.session_date_item:hover {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #621402;
+    background: #FE8E05;
+    cursor: pointer;
+}
+.session__label{
+    margin-bottom: 20px;
+}
+.session_month {
+    font-size: 16px;
+    line-height: 19px;
+}
+.session_day {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 35px;
+}
+.session_week {
+    font-size: 19px;
+    line-height: 22px;
+}
+.select-cinema {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);    
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    min-width: 470px;
+    height: 60px;
+    margin-top: 33px;
+}
+.select {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);    
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    width: 108px;
+    height: 60px;
+    margin-top: 33px;
+}
+option {
+   background:#621402;
 }
