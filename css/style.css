@@ -41,6 +41,9 @@ font-family: 'Roboto', sans-serif;
 .menu__item:last-child{
     margin-right: 0px;
 }
+.menu__item:hover{
+    text-decoration: underline;
+}
 .container {
     max-width:1170px;
     margin: 0 auto;
@@ -83,6 +86,7 @@ font-family: 'Roboto', sans-serif;
 }
 .film__trailer {
     margin: auto;
+    cursor: pointer;
 }
 .film__details{
     display: flex;
@@ -249,5 +253,9 @@ option {
     font-size: 18px;
     line-height: 21px;
     padding: 24px 52px;
+}
+.button:hover {    
+    background: #a85e04;    
+    text-decoration: underline;    
 }
 
