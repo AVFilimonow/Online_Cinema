@@ -177,3 +177,73 @@ font-family: 'Roboto', sans-serif;
 option {
    background:#621402;
 }
+.scheme {
+    background: rgba(36, 36, 36, 0.18);
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+}
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+.scheme path.booked, .scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor:not-allowed;
+}
+.scheme path.active {
+    fill: rgba(223, 124, 11, 1);
+}
+.legend {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    max-width:1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 35px;
+}
+.legend_label {
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 10px;
+    
+}
+.legend path.active, .legend path.active:hover {
+    fill: rgba(223, 124, 11, 1);
+}
+.price {
+    padding:35px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.price__label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+.price__total {
+    font-size: 52px;
+    line-height: 61px;
+}
+.ruble {
+    font-size: 52px;
+    line-height: 61px;
+}
+.button {
+    display: block;
+    background: #FE8E05;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+}
+.button-pay {
+
+}
