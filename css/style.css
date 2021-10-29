@@ -32,7 +32,7 @@ font-family: 'Roboto', sans-serif;
     display: flex;
     margin: 0;
 }
-.m_menu_img{
+.m_menu{
     display: none;
 }
 .menu__item{
